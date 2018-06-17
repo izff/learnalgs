@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8263b0e-4429-4f8d-a40d-b7bf7efbc0c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Percolation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PercolationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuickFindUF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap1/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/Percolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap1/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap1/PercolationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/PercolationStats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap1/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/PercolationStats.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,45 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PercolationStats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="47" column="109" lean-forward="true" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Percolation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1320#1321#0" expanded="true" />
-                <element signature="e#1373#1374#0" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1680#1681#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeightedQuickUnionUF.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeightedQuickUnionUF.java" pinned="false" current-in-tab="true">
         <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -78,15 +39,12 @@
     <findStrings>
       <find>isOpen</find>
       <find>n - 1</find>
+      <find>n -</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/PercolationStats.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Percolation.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -100,7 +58,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="567" />
+    <option name="x" value="993" />
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="1385" />
@@ -118,11 +76,6 @@
             <path>
               <item name="learnalgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learnalgs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,7 +160,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="567" y="23" width="1075" height="1385" extended-state="0" />
+    <frame x="993" y="23" width="1075" height="1385" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -303,17 +256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        <state relative-caret-position="242">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1025#1026#0" expanded="true" />
@@ -325,6 +271,13 @@
             <element signature="e#1630#1631#0" expanded="true" />
             <element signature="e#1680#1681#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -3,11 +3,15 @@ import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class PercolationStats {
-    private int n;
-    private int trails;
     private double[] result;
+    private double rmean, rstddev;
 
     public PercolationStats (int n, int trails) {
+        if ( n <= 0 )
+            throw new IllegalArgumentException("n should be larger than 0");
+        if ( trails <= 0 )
+            throw new IllegalArgumentException("trails should be larger than 0");
+        
         int i, j, count;
         result = new double[trails];
         for (int k = 0; k < trails; k++) {
@@ -20,30 +24,34 @@ public class PercolationStats {
             count = pe.numberOfOpenSites();
             result[k] = (double) count / (n * n);
         }
+        rmean = StdStats.mean(result);
+        if (trails == 1)
+            rstddev = Double.NaN;
+        else rstddev = StdStats.stddev(result);
     }
 
     public double mean() {
-        return StdStats.mean(result);
+        return rmean;
     }
 
     public double stddev() {
-        return StdStats.stddev(result);
+        return rstddev;
     }
 
     public double confidenceLo() {
-        return mean() - 1.96 * stddev() / (Math.sqrt(result.length));
+        return rmean - 1.96 * rstddev / (Math.sqrt(result.length));
     }
 
     public double confidenceHi() {
-        return mean() + 1.96 * stddev() / (Math.sqrt(result.length));
+        return rmean + 1.96 * rstddev / (Math.sqrt(result.length));
     }
 
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
         int trails = Integer.parseInt(args[1]);
         PercolationStats test = new PercolationStats(n, trails);
-        StdOut.println("mean                    = " + test.mean());
-        StdOut.println("stddev                  = " + test.stddev());
+        StdOut.println("mean                    = " + test.rmean);
+        StdOut.println("stddev                  = " + test.rstddev);
         StdOut.println("95% confidence interval = [" + test.confidenceLo() + ", " + test.confidenceHi() + "]");
     }
 }
