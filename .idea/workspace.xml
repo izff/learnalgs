@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8263b0e-4429-4f8d-a40d-b7bf7efbc0c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/chap1/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/Percolation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap1/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap1/PercolationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/PercolationStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap1/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/PercolationStats.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8263b0e-4429-4f8d-a40d-b7bf7efbc0c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +12,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeightedQuickUnionUF.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
+      <file leaf-file-name="LinkedStack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LinkedStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+            <state relative-caret-position="-1142">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1493#1494#0" expanded="true" />
+                <element signature="e#2493#2501#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,6 +45,7 @@
       <find>isOpen</find>
       <find>n - 1</find>
       <find>n -</find>
+      <find>ListIterator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -54,11 +60,12 @@
         <option value="$PROJECT_DIR$/src/percolation.java" />
         <option value="$PROJECT_DIR$/src/PercolationStats.java" />
         <option value="$PROJECT_DIR$/src/Percolation.java" />
+        <option value="$PROJECT_DIR$/src/LinkedStack.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="993" />
+    <option name="x" value="1349" />
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="1385" />
@@ -77,6 +84,11 @@
               <item name="learnalgs" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learnalgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -89,7 +101,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,7 +172,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="993" y="23" width="1075" height="1385" extended-state="0" />
+    <frame x="1349" y="23" width="1075" height="1385" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -168,14 +180,14 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.12509535" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.12509535" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49913344" weight="0.3295053" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19534884" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19534884" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -195,40 +207,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PercolationStats.java">
+    <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2869">
+          <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PercolationStats.java" />
+    <entry file="file://$PROJECT_DIR$/src/Percolation.java" />
     <entry file="file://$PROJECT_DIR$/src/QuickFindUF.java" />
     <entry file="file://$PROJECT_DIR$/src/BinarySearch.java" />
     <entry file="file://$PROJECT_DIR$/src/BinarySearch.java" />
@@ -240,44 +227,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PercolationStats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="109" lean-forward="true" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PercolationStats.java" />
+    <entry file="file://$PROJECT_DIR$/src/Percolation.java" />
     <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="151" column="47" selection-start-line="151" selection-start-column="47" selection-end-line="151" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1142">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#2493#2501#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
