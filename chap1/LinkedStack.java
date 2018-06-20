@@ -3,7 +3,7 @@ import java.util.NoSuchElementException;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
-public class LinkedStack<Item>
+public class LinkedStack<Item> implements Iterable<Item>
 {
     private Node first;
     private int n;
@@ -106,6 +106,16 @@ public class LinkedStack<Item>
     {
         return n;
     }
+
+    // overload the toString method of its father object
+    public String toString() 
+    {
+        StringBuilder s = new StringBuilder();
+        for (Item item : this)
+            s.append(item + "");
+        return s.toString();
+    }
+
 
     public static void main(String[] args)
     {
