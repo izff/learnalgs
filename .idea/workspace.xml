@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8263b0e-4429-4f8d-a40d-b7bf7efbc0c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/chap1/LinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/chap1/LinkedStack.class" afterDir="false" />
-    </list>
+    <list default="true" id="d8263b0e-4429-4f8d-a40d-b7bf7efbc0c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,11 +42,12 @@
         <option value="$PROJECT_DIR$/src/Percolation.java" />
         <option value="$PROJECT_DIR$/src/LinkedStack.java" />
         <option value="$PROJECT_DIR$/src/ResizingArrayStack.java" />
+        <option value="$PROJECT_DIR$/src/LinkedQueue.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1089" />
+    <option name="x" value="1110" />
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="1385" />
@@ -59,8 +58,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -73,11 +71,18 @@
               <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learnalgs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnalgs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedQueue.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,7 +160,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1089" y="23" width="1075" height="1385" extended-state="0" />
+    <frame x="1110" y="23" width="1075" height="1385" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -164,8 +169,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.12509535" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49913344" weight="0.3295053" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -174,8 +179,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" />
@@ -189,16 +194,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LinkedStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedStack.java" />
     <entry file="jar://$PROJECT_DIR$/algs/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2869">
@@ -235,16 +231,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedStack.java" />
     <entry file="file://$PROJECT_DIR$/src/ResizingArrayStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -264,6 +251,18 @@
             <element signature="e#1836#1837#0" expanded="true" />
             <element signature="e#1900#1901#0" expanded="true" />
             <element signature="e#2127#2135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="138" column="32" lean-forward="true" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#3056#3057#0" expanded="true" />
           </folding>
         </state>
       </provider>
