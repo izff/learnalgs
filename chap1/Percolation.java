@@ -7,7 +7,7 @@ public class Percolation {
     private int[][] nbyn;
     private WeightedQuickUnionUF uf;
     private boolean[] todown;
-    private percolateflag = false;
+    private boolean percolateflag = false;
 
     public Percolation(int size) {
         if (size <= 0) 
@@ -21,8 +21,8 @@ public class Percolation {
     }
 
     public void open(int row, int col) {
-        private boolean top;
-        private boolean down;
+        boolean top = false;
+        boolean down = false;
         if (!validate(row, col))
             throw new IllegalArgumentException("Index out of range.");
             
@@ -36,20 +36,24 @@ public class Percolation {
         // if so, make the ij node connected to the down node
         // Note: the power of uf.find()
         if (validate(row, col - 1) && isOpen(row, col - 1)) {
+            if (todown[uf.find(index - 1)] || todown[uf.find(index)]) 
+                down = true; 
             uf.union(index, index - 1);
-            if (todown[uf.find(index - 1)]) todown[index] = true; 
         }
         if (validate(row, col + 1) && isOpen(row, col + 1)) {
+            if (todown[uf.find(index + 1)] || todown[uf.find(index)]) 
+                down = true; 
             uf.union(index, index + 1);
-            if (todown[uf.find(index + 1)]) todown[index] = true; 
         }
         if (validate(row - 1, col) && isOpen(row - 1, col)) {
+            if (todown[uf.find(index - n)] || todown[uf.find(index)]) 
+                down = true; 
             uf.union(index, index - n);
-            if (todown[uf.find(index - n)]) todown[index] = true; 
         }
         if (validate(row + 1, col) && isOpen(row + 1, col)) {
+            if (todown[uf.find(index + n)] || todown[uf.find(index)]) 
+                down = true; 
             uf.union(index, index + n);
-            if (todown[uf.find(index + n)]) todown[index] = true; 
         }
 
         /*
@@ -63,13 +67,16 @@ public class Percolation {
             uf.union(index, index + n);
         */
 
-        top = uf.connected(0, index);
-        down = todown[index];
-
         // if ij is in the last row, it is certainly connected to 
         // the virtual down node
         if (row == n)
             down = true;
+
+        
+        top = uf.connected(0, index);
+        todown[uf.find(index)] = down;
+
+        //StdOut.println("Top is " + top + " and down is " + down + ".");
         
         if (top && down)
             percolateflag = true;
@@ -112,11 +119,17 @@ public class Percolation {
                 StdOut.print(nbyn[i][j] + " ");
             StdOut.println(" ");
         }
+        for (int i = 0 ; i < n; i++) {
+            for (int j = 0; j < n; j++)
+                StdOut.print(todown[i*n + j + 1] + " ");
+            StdOut.println(" ");
+        }
+        StdOut.println("------------------------");
     }
     */
     
     public static void main(String[] args) {
-        int n = 30;
+        int n = 4;
         int i, j;
         Percolation pe = new Percolation(n);
         while (!pe.percolates()) {
