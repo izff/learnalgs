@@ -1,1 +1,8 @@
 .DS_Store
+out
+*.class
+*.log
+*.rar
+*.jar
+*.tar.gz
+*.zip
