@@ -6,8 +6,6 @@ public class Percolation {
     private int n;
     private int[][] nbyn;
     private WeightedQuickUnionUF uf;
-    private boolean[] todown;
-    private percolateflag = false;
 
     public Percolation(int size) {
         if (size <= 0) 
@@ -15,14 +13,17 @@ public class Percolation {
         
         n = size;
         nbyn = new int[n][n];
-        todown = new boolean[n*n + 1];
         int size2 = n * n + 2;
         uf = new WeightedQuickUnionUF(size2);
+        /*
+        for (int i = 0; i < n; i++) {
+            uf.union(0, i + 1);
+            uf.union(size2 - 1, size2 - i - 2);
+        }
+        */
     }
 
     public void open(int row, int col) {
-        private boolean top;
-        private boolean down;
         if (!validate(row, col))
             throw new IllegalArgumentException("Index out of range.");
             
@@ -31,28 +32,6 @@ public class Percolation {
         
         if (row == 1) uf.union(0, index);
         
-        // connect with the neighbour if possible
-        // also check if the root node of neighbor is connected to the down node
-        // if so, make the ij node connected to the down node
-        // Note: the power of uf.find()
-        if (validate(row, col - 1) && isOpen(row, col - 1)) {
-            uf.union(index, index - 1);
-            if (todown[uf.find(index - 1)]) todown[index] = true; 
-        }
-        if (validate(row, col + 1) && isOpen(row, col + 1)) {
-            uf.union(index, index + 1);
-            if (todown[uf.find(index + 1)]) todown[index] = true; 
-        }
-        if (validate(row - 1, col) && isOpen(row - 1, col)) {
-            uf.union(index, index - n);
-            if (todown[uf.find(index - n)]) todown[index] = true; 
-        }
-        if (validate(row + 1, col) && isOpen(row + 1, col)) {
-            uf.union(index, index + n);
-            if (todown[uf.find(index + n)]) todown[index] = true; 
-        }
-
-        /*
         if (validate(row, col - 1) && isOpen(row, col - 1) && !uf.connected(index, index - 1))
             uf.union(index, index - 1);
         if (validate(row, col + 1) && isOpen(row, col + 1) && !uf.connected(index, index + 1))
@@ -61,18 +40,6 @@ public class Percolation {
             uf.union(index, index - n);
         if (validate(row + 1, col) && isOpen(row + 1, col) && !uf.connected(index, index + n))
             uf.union(index, index + n);
-        */
-
-        top = uf.connected(0, index);
-        down = todown[index];
-
-        // if ij is in the last row, it is certainly connected to 
-        // the virtual down node
-        if (row == n)
-            down = true;
-        
-        if (top && down)
-            percolateflag = true;
     }
 
     private boolean validate(int row, int col) {
@@ -102,7 +69,9 @@ public class Percolation {
     }
 
     public boolean percolates() {
-        return percolateflag;
+        for (int col = 1; col <= n; col++)
+            if (isFull(n, col)) return true;
+        return false;
     }
 
     /*
