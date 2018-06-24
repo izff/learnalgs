@@ -26,6 +26,8 @@ abstract class Person {
     private String name;
     private int age;
     
+    public Person() {}
+    
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
@@ -44,7 +46,7 @@ abstract class Person {
 }
 
 abstract class Player extends Person {
-    //public Player() {}
+    public Player() {}
     public Player(String name, int age) {
         super(name, age);
     }
@@ -53,7 +55,7 @@ abstract class Player extends Person {
 }
 
 abstract class Coach extends Person {
-    //public Coach() {}
+    public Coach() {}
     public Coach(String name, int age) {
         super(name, age);
     }
@@ -62,7 +64,7 @@ abstract class Coach extends Person {
 }
 
 class BBCoach extends Coach {
-    //public BBCoach() {}
+    public BBCoach() {}
     
     public BBCoach(String name, int age) {
         super(name, age);
@@ -78,7 +80,7 @@ class BBCoach extends Coach {
 }
 
 class TTCoach extends Coach implements SpeakingEnglish {
-    //public TTCoach() {}
+    public TTCoach() {}
     
     public TTCoach(String name, int age) {
         super(name, age);
@@ -98,7 +100,7 @@ class TTCoach extends Coach implements SpeakingEnglish {
 }
 
 class TTPlayer extends Player implements SpeakingEnglish {
-    //public TTPlayer() {}
+    public TTPlayer() {}
 
     public TTPlayer(String name, int age) {
         super(name, age);
@@ -118,7 +120,7 @@ class TTPlayer extends Player implements SpeakingEnglish {
 }
 
 class BBPlayer extends Player {
-    //public BBPlayer() {}
+    public BBPlayer() {}
 
     public BBPlayer(String name, int age) {
         super(name, age);
