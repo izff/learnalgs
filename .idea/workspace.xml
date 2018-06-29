@@ -53,11 +53,12 @@
         <option value="$PROJECT_DIR$/src/Deque.java" />
         <option value="$PROJECT_DIR$/src/RandomizedQueue.java" />
         <option value="$PROJECT_DIR$/src/Merge.java" />
+        <option value="$PROJECT_DIR$/src/MergeSort.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="802" />
+    <option name="x" value="1023" />
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="1385" />
@@ -167,7 +168,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="802" y="23" width="1075" height="1385" extended-state="0" />
+    <frame x="1023" y="23" width="1075" height="1385" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -176,8 +177,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.17620137" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49913344" weight="0.3295053" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -186,8 +187,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" />
@@ -230,14 +231,26 @@
     <entry file="file://$PROJECT_DIR$/src/Permutation.java" />
     <entry file="file://$PROJECT_DIR$/src/Deque.java" />
     <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java" />
-    <entry file="file://$PROJECT_DIR$/src/Merge.java">
+    <entry file="file://$PROJECT_DIR$/src/Merge.java" />
+    <entry file="file://$PROJECT_DIR$/src/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="577">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
