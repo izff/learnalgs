@@ -6,30 +6,33 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdDraw;
 
-public class BruteCollinearPoint {
-    private ArrayList<LineSegment> ls = new ArrayList<>();
+public class BruteCollinearPoints {
+    private final ArrayList<LineSegment> ls = new ArrayList<>();
 
-    public BruteCollinearPoint (Point[] points) {
-        if (points == null) throw new IllegalArgumentException();
-
+    public BruteCollinearPoints (Point[] points) {
+        if (points == null) throw new IllegalArgumentException("Argument is null.");
+        
         int len = points.length;
+        for (int i = 0; i < len; i++) {
+            if (points[i] == null) throw new IllegalArgumentException("Element is null.");
+        }
+        
         Point[] aux = Arrays.copyOf(points, len);
         Arrays.sort(aux);
 
         for (int i = 0; i < len; i++) {
-            if (aux[i] == null) throw new IllegalArgumentException();
             for (int j = i + 1; j < len; j++) {
                 checkPoints(aux[i], aux[j]);
                 for (int k = j + 1; k < len; k++) {
                     if (threePoints(aux[i], aux[j], aux[k])) {
-                        for (int l = k + 1; l < len; l++) {
-                            //StdOut.println("test: " + l + ":" + aux[l].toString());
-                            if (threePoints(aux[i], aux[j], aux[l])) {
-                                ls.add(new LineSegment(aux[i], aux[l]));
+                        for (int z = k + 1; z < len; z++) {
+                            // StdOut.println("test: " + l + ":" + aux[l].toString());
+                            if (threePoints(aux[i], aux[j], aux[z])) {
+                                ls.add(new LineSegment(aux[i], aux[z]));
                                 break;
                             }
                         }
-                        //StdOut.println("------");
+                        // StdOut.println("------");
                     }
                 }
             }
@@ -37,7 +40,7 @@ public class BruteCollinearPoint {
     }
 
     private static void checkPoints(Point a, Point b) {
-        if (a.compareTo(b) == 0) throw new IllegalArgumentException();
+        if (a.compareTo(b) == 0) throw new IllegalArgumentException("Duplicate elements");
     }
 
     private static boolean threePoints(Point a, Point b, Point c) {
@@ -63,8 +66,7 @@ public class BruteCollinearPoint {
             int x = in.readInt();
             int y = in.readInt();
             points[i] = new Point(x, y);
-        }
-        
+        }        
         
         // draw the points
         StdDraw.enableDoubleBuffering();
@@ -72,6 +74,7 @@ public class BruteCollinearPoint {
         StdDraw.setYscale(0, 32768);
         for (Point p : points) {
             p.draw();
+            StdOut.println(p.toString());
         }
         StdDraw.show();
         
@@ -85,8 +88,9 @@ public class BruteCollinearPoint {
         */
         
         // print and draw the line segments
-        BruteCollinearPoint collinear = new BruteCollinearPoint(points);
-        StdOut.println("*********");
+        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+      
+        // StdOut.println("*********");
         for (LineSegment segment : collinear.segments()) {
             StdOut.println(segment);
             segment.draw();
