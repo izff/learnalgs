@@ -10,20 +10,20 @@ public class BruteCollinearPoint {
     private ArrayList<LineSegment> ls = new ArrayList<>();
 
     public BruteCollinearPoint (Point[] points) {
+        if (points == null) throw new IllegalArgumentException();
+
         int len = points.length;
         Point[] aux = Arrays.copyOf(points, len);
         Arrays.sort(aux);
 
-        for (int i = 0; i < len; i++)
-            for (int j = i+1; j < len; j++)
-                for (int k = j+1; k < len; k++) {
+        for (int i = 0; i < len; i++) {
+            if (aux[i] == null) throw new IllegalArgumentException();
+            for (int j = i + 1; j < len; j++) {
+                checkPoints(aux[i], aux[j]);
+                for (int k = j + 1; k < len; k++) {
                     if (threePoints(aux[i], aux[j], aux[k])) {
-                        //StdOut.println("------");
-                        //StdOut.println(i + ":" + aux[i].toString());
-                        //StdOut.println(j + ":" + aux[j].toString());
-                        //StdOut.println(k + ":" + aux[k].toString());
-                        for (int l = len - 1; l >= k+1; l--) {
-                            StdOut.println("test: "+ l + ":" + aux[l].toString());
+                        for (int l = k + 1; l < len; l++) {
+                            //StdOut.println("test: " + l + ":" + aux[l].toString());
                             if (threePoints(aux[i], aux[j], aux[l])) {
                                 ls.add(new LineSegment(aux[i], aux[l]));
                                 break;
@@ -32,6 +32,12 @@ public class BruteCollinearPoint {
                         //StdOut.println("------");
                     }
                 }
+            }
+        }
+    }
+
+    private static void checkPoints(Point a, Point b) {
+        if (a.compareTo(b) == 0) throw new IllegalArgumentException();
     }
 
     private static boolean threePoints(Point a, Point b, Point c) {
