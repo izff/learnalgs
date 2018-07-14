@@ -6,3 +6,5 @@ out/*
 *.jar
 *.tar.gz
 *.zip
+input*.txt
+*.png
