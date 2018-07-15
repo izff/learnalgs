@@ -1,27 +1,44 @@
-import java.util.ArrayList;
-import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
+import edu.princeton.cs.algs4.Point2D;
 
 public class KdTree {
-    private static final boolean HORIZONTAL = true;
-    private static final boolean VERTICAL = false;
+    private Node root;
+    private int size;
 
-    public KdTree() {
+    private static class Node {
+        private Point2D p;
+        private RectHV rect;
+        private Node lb;
+        private Node rt;
+        private boolean status;
 
+        public Node(Point2D p, RectHV rect, boolean status) {
+            this.p = p;
+            this.rect = rect;
+            this.status = status;
+        }
     }
 
-    public boolean isEmpty() {}
+    public KdTree() {}
 
-    public void insert(Point2D p) {}
+    public boolean isEmpty() { return size == 0; }
 
-    public boolean contains(Point2D p) {}
+    public int size() { return size; }
 
-    public Iterable<Point2D> range(RectHV rect) {}
+    public void insert(Point2D p) {
+        if (p == null) throw new IllegalArgumentException();
 
-    public Point2D nearest(Point2D p) {
+        root = insert(root, null, p, 0);
     }
 
-    public static void main(String[] args) {
-        // skip testing now
+    public Node insert(Node x, Node parent, Point2D p, int status) {
+        if (x == null) {
+            if (size++ == 0) return new Node(p, new RectHV(0, 0, 1,1), true);
+
+            RectHV rectOfX = parent.rect;
+
+            if (status )
+        }
     }
 }
+

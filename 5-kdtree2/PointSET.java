@@ -4,9 +4,9 @@ import java.util.TreeSet;
 import java.util.ArrayList;
 
 public class PointSET {
-    private TreeSet<Point2D> plist;
+    private final TreeSet<Point2D> plist;
 
-    public PointSET () {
+    public PointSET() {
         plist = new TreeSet<>();
     }
 
@@ -42,13 +42,18 @@ public class PointSET {
         double minDistance = Double.POSITIVE_INFINITY;
         double temp;
         for (Point2D pm: plist) {
-            temp = p.distanceTo(pm);
+            temp = p.distanceSquareTo(pm);
             if (temp < minDistance) {
                 minDistance = temp;
                 nearest = pm;
             }
         }
         return nearest;
+    }
+    
+    public void draw() {
+        for (Point2D p: plist)
+            p.draw();
     }
 
     public static void main(String[] args) {
